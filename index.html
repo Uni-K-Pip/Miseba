@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>プライバシーポリシー — Miseba</title>
+<title>Miseba — 配信の見どころ切り抜き支援拡張（製品情報・プライバシーポリシー）</title>
+<meta name="description" content="Miseba は YouTube ライブ配信アーカイブからの切り抜き動画制作を支援する Chrome 拡張機能です。無料の打点・チャプター書き出しに加え、月額980円の Pro で盛り上がり解析・チャット検索・編集ソフト向けエクスポートが使えます。" />
 <meta name="robots" content="index,follow" />
 <style>
   :root { color-scheme: light dark; }
@@ -15,55 +16,112 @@
   main { max-width: 720px; margin: 0 auto; }
   h1 { font-size: 1.6rem; margin: 0 0 .25rem; }
   h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; border-bottom: 1px solid #e2e2e8; padding-bottom: .3rem; }
-  .updated { color: #6b6c78; font-size: .9rem; margin: 0 0 1.5rem; }
+  h3 { font-size: 1rem; margin: 1.25rem 0 .35rem; }
+  .lead { color: #3a3b44; margin: .5rem 0 0; }
+  .updated { color: #6b6c78; font-size: .9rem; margin: .75rem 0 1.5rem; }
   ul { padding-left: 1.3rem; }
   li { margin: .25rem 0; }
   strong { font-weight: 700; }
   code { background: #ececed; padding: .1em .35em; border-radius: 4px; font-size: .9em; }
+  .price { font-size: 1.25rem; font-weight: 700; }
+  .plans { display: grid; gap: 1rem; grid-template-columns: 1fr 1fr; margin: 1rem 0; }
+  .plan { border: 1px solid #e2e2e8; border-radius: 10px; padding: 1rem 1.1rem; background: #fff; }
+  .plan h3 { margin-top: 0; }
+  hr { border: none; border-top: 1px solid #e2e2e8; margin: 2.5rem 0; }
   footer { margin-top: 3rem; color: #8a8b95; font-size: .85rem; }
+  a { color: #5b4ad1; }
+  @media (max-width: 560px) { .plans { grid-template-columns: 1fr; } }
   @media (prefers-color-scheme: dark) {
     body { color: #e6e7ec; background: #16171b; }
     h2 { border-color: #2c2d33; }
+    .lead { color: #c7c8d0; }
     .updated { color: #9a9ba6; }
     code { background: #2a2b31; }
+    .plan { border-color: #2c2d33; background: #1d1e23; }
+    hr { border-top-color: #2c2d33; }
+    a { color: #a99cff; }
     footer { color: #767780; }
   }
 </style>
 </head>
 <body>
 <main>
-  <h1>プライバシーポリシー — Miseba（配信の見どころ発掘拡張）</h1>
-  <p class="updated">最終更新: 2026-06-14</p>
+  <h1>Miseba — 配信の見どころを、チャットから発掘。</h1>
+  <p class="lead">Miseba は、YouTube ライブ配信のアーカイブから「切り抜き動画」を作る編集者向けの Chrome 拡張機能です。視聴ページ上で見どころに打点し、盛り上がりを解析して、編集ソフトへそのまま渡せる形で書き出します。</p>
+
+  <h2>主な機能</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3>無料</h3>
+      <ul>
+        <li>見どころの打点（イン点・アウト点・メモ）</li>
+        <li>YouTube チャプター用テキストの書き出し</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>Pro（月額）</h3>
+      <ul>
+        <li>チャット盛り上がり解析・ヒートマップ表示</li>
+        <li>チャット検索ジャンプ</li>
+        <li>CSV / EDL / FCPXML 形式での書き出し（編集ソフト連携）</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2>料金</h2>
+  <p><span class="price">月額 980 円</span>（Pro プラン）。自動更新のサブスクリプションで、<strong>いつでも解約できます</strong>。解約は拡張機能のパネルまたはポップアップの「サブスクリプションを管理」から行えます。無料機能はサブスクリプションなしで利用できます。</p>
+
+  <h2>入手・ご利用方法</h2>
+  <ul>
+    <li>Chrome ウェブストアから Miseba をインストールします。</li>
+    <li>YouTube の視聴ページ（<code>https://www.youtube.com/watch*</code>）を開くと、画面上にパネルが表示されます。</li>
+    <li>Pro 機能を使う場合は、パネルまたはポップアップの「アップグレード」から月額プランに申し込みます。</li>
+  </ul>
+
+  <h2>お支払い・課金について</h2>
+  <p>Pro の決済は、決済代行サービス <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>（Stripe 決済）を通じて行われる<strong>月額自動更新のサブスクリプション</strong>です。本拡張は自前の決済サーバーを持たず、カード番号等の支払い情報を保持・取得しません。解約後は、その課金期間の満了をもって自動更新が停止します。</p>
+
+  <hr />
+
+  <h1>プライバシーポリシー</h1>
+  <p class="updated">最終更新: 2026-06-28</p>
 
   <h2>概要</h2>
-  <p>Miseba（以下「本拡張」）は、利用者のプライバシーを最優先に設計されています。<strong>本拡張は、利用者の個人情報や利用データを収集・送信・共有しません。</strong></p>
+  <p>Miseba（以下「本拡張」）は、利用者のプライバシーを最優先に設計されています。<strong>本拡張は、利用者の閲覧内容や打点・設定データを収集・送信・共有しません。</strong>唯一の例外は、有料機能（Pro）の購入手続きで、決済代行サービス ExtensionPay / Stripe にメールアドレス等の決済情報が送られる場合のみです（後述）。</p>
 
   <h2>取得・保存する情報</h2>
-  <p>本拡張が保存するのは、利用者がブラウザ上で作成した打点情報のみです。</p>
+  <p>本拡張が端末内に保存するのは、利用者がブラウザ上で作成・設定した次の情報のみです。</p>
   <ul>
-    <li>イン点・アウト点の時刻</li>
-    <li>各打点のメモ</li>
-    <li>上記をひも付ける動画 ID</li>
+    <li>打点情報（イン点・アウト点の時刻、メモ、ひも付ける動画 ID）— IndexedDB</li>
+    <li>設定（書き出し fps、チャット検索のカスタム辞書）— chrome.storage</li>
+    <li>課金状態のキャッシュ（Pro か否か）— ExtensionPay が chrome.storage に保存</li>
   </ul>
-  <p>これらは利用者のブラウザ内（IndexedDB）に<strong>ローカル保存</strong>され、利用者の端末から外部へ送信されることはありません。本拡張は外部サーバーを持ちません。</p>
+  <p>これらは利用者のブラウザ内に<strong>ローカル保存</strong>され、利用者の端末から外部へ送信されることはありません（課金状態の照会を除く）。本拡張は独自の外部サーバーを持ちません。</p>
 
   <h2>チャットの解析について</h2>
   <p>盛り上がりヒートマップを作るために、本拡張は再生中の動画の<strong>公開チャットリプレイ</strong>を YouTube から読み取り、件数や時間あたりの密度を<strong>利用者の端末内で集計</strong>します。チャットの本文を外部に送信・永続保存・再配布することはありません。集計結果（ヒートマップ）はメモリ上で扱われ、保存されるのは利用者が作成した打点のみです。</p>
 
   <h2>取得しない情報</h2>
   <ul>
-    <li>氏名・メールアドレス等の個人を特定する情報</li>
     <li>閲覧履歴・検索履歴</li>
     <li>位置情報・連絡先</li>
-    <li>認証情報・支払い情報</li>
+    <li>カード番号等の支払い情報（決済は ExtensionPay / Stripe が処理し、本拡張はカード情報を保持・取得しません）</li>
   </ul>
   <p>本拡張はアクセス解析・トラッキング・広告の仕組みを一切含みません。</p>
+
+  <h2>課金（Pro）について</h2>
+  <p>有料機能（Pro）の決済には、決済代行サービス <a href="https://extensionpay.com" target="_blank" rel="noopener">ExtensionPay</a>（Stripe 決済）を利用します。本拡張は自前の決済サーバーを持ちません。</p>
+  <ul>
+    <li>購入手続きの際、ユーザーのメールアドレス・決済情報は ExtensionPay / Stripe へ送られ、これらのサービスのプライバシーポリシーに基づいて取り扱われます。</li>
+    <li>本拡張がそれらのサービスから受け取り保持するのは「課金済みか否か」の状態のみで、カード番号等の支払い情報は受け取りません。</li>
+    <li>決済完了の検知（onPaid）のため、<code>https://extensionpay.com/*</code> 上でメッセージの受け渡しを行います。</li>
+  </ul>
 
   <h2>動画について</h2>
   <p>本拡張は再生位置の移動やヒートマップの表示を行うだけで、<strong>動画や音声・チャットのダウンロード・保存・再配布は行いません。</strong></p>
 
   <h2>権限</h2>
-  <p>本拡張は YouTube の視聴ページ（<code>https://www.youtube.com/watch*</code>）でのみ動作します。その範囲外のページやデータにはアクセスしません。チャットの取得も同一オリジン（youtube.com）への通信のみです。</p>
+  <p>本拡張の主機能は YouTube の視聴ページ（<code>https://www.youtube.com/watch*</code>）でのみ動作します。チャットの取得も同一オリジン（youtube.com）への通信のみです。加えて、Pro 決済の状態同期のために <code>https://extensionpay.com/*</code> でコンテンツスクリプトが動作し、バックグラウンドの service worker が課金状態を管理します。これは ExtensionPay による決済完了の検知と課金状態の取得のためのみに使用し、それ以外のページやデータにはアクセスしません。</p>
 
   <h2>データの削除</h2>
   <p>保存された打点は、本拡張のパネルから削除できるほか、ブラウザのサイトデータ（YouTube）を消去するか、拡張機能を削除することでいつでも削除できます。</p>
